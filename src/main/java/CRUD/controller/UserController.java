@@ -31,5 +31,9 @@ public class UserController {
         model.addAttribute("role",us.getRoles());
         return "loginsuccess";
     }
+    @RequestMapping("script.js")
+    public String script() {
+        return "script.js";
+    }
 
 }
